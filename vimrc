@@ -64,3 +64,4 @@ au FileType python setl sw=4 ts=4 et
 
 " Highlighting
 hi SpellBad ctermfg=white ctermbg=red cterm=none
+hi MatchParen ctermfg=magenta ctermbg=none cterm=none
