@@ -41,11 +41,12 @@ nnoremap <C-l> <C-w>l
 " FZF settings
 nnoremap <silent> <Leader><Leader> :Files<CR>
 
+" vim-go settings
+let g:go_fmt_command = "goimports"
+let g:go_metalinter_command='golangci-lint'
+
 " Change esc to jj
 imap jj <Esc>
-
-" Use Goimports
-let g:go_fmt_command = "goimports"
 
 " Whitespace
 set nowrap                      " don't wrap lines
