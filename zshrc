@@ -150,6 +150,8 @@ alias glola="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Crese
 alias glog='git log --oneline --decorate --graph'
 
 alias gp='git push'
+alias gpf='git push --force-with-lease'
+alias gpf!='git push --force'
 alias gpsup='git push --set-upstream origin $(git_current_branch)'
 alias gpv='git push -v'
 
