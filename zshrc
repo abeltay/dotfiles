@@ -119,7 +119,9 @@ alias gaa='git add --all'
 alias gapa='git add --patch'
 
 alias gb='git branch'
+alias gbd='git branch -d'
 alias gbda='git branch --merged | command grep -vE "^(\*|\s*master\s*$)" | command xargs -n 1 git branch -d'
+alias gbD='git branch -D'
 alias gbr='git branch --remote'
 
 alias gc='git commit -v'
