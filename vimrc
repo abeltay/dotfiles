@@ -12,7 +12,6 @@ Plug 'fatih/vim-go', { 'tag': '*' }
 
 " React, ES6
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'jsx'] }
-Plug 'mxw/vim-jsx', { 'for': 'jsx' }
 
 " Commands - PlugInstall, PlugUpdate, PlugClean[!], PlugUpgrade (Upgrade vim-plug)
 call plug#end()
