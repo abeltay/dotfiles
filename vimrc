@@ -8,7 +8,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 " Go
-Plug 'fatih/vim-go', { 'tag': '*' }
+Plug 'fatih/vim-go', { 'tag': '*', 'for': 'go' }
 
 " React, ES6
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'jsx'] }
