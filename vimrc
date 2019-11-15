@@ -7,6 +7,9 @@ Plug 'tpope/vim-surround'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
+" NERDTree
+Plug 'scrooloose/nerdtree', { 'tag': '*' }
+
 " Go
 Plug 'fatih/vim-go', { 'tag': '*', 'for': 'go' }
 
@@ -42,6 +45,9 @@ nnoremap <C-l> <C-w>l
 
 " FZF settings
 nnoremap <silent> <Leader><Leader> :Files<CR>
+
+" NERDTree settings
+map <C-n> :NERDTreeToggle<CR>
 
 " vim-go settings
 let g:go_fmt_command = "goimports"
