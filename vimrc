@@ -49,10 +49,6 @@ nnoremap <silent> <Leader><Leader> :Files<CR>
 " NERDTree settings
 map <C-n> :NERDTreeToggle<CR>
 
-" vim-go settings
-let g:go_fmt_command = "goimports"
-let g:go_metalinter_command='golangci-lint'
-
 " Change esc to jj
 imap jj <Esc>
 
