@@ -2,13 +2,11 @@ set nocompatible              " be iMproved, required
 
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-vinegar'
 
 " fzf setup
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
-
-" NERDTree
-Plug 'scrooloose/nerdtree', { 'tag': '*' }
 
 " Go
 Plug 'fatih/vim-go', { 'tag': '*', 'for': 'go' }
@@ -45,9 +43,6 @@ nnoremap <C-l> <C-w>l
 
 " FZF settings
 nnoremap <silent> <Leader><Leader> :Files<CR>
-
-" NERDTree settings
-map <C-n> :NERDTreeToggle<CR>
 
 " Change esc to jj
 imap jj <Esc>
