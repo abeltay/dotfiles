@@ -51,9 +51,7 @@ imap jj <Esc>
 set nowrap                      " don't wrap lines
 set backspace=indent,eol,start  " backspace through everything in insert mode
 
-au BufNewFile,BufRead *.{md,markdown,mdown,mkd,mkdn,txt} set ft=markdown
 au BufNewFile,BufRead {Gemfile,Rakefile,config.ru} set ft=ruby
-au BufNewFile,BufRead *.scss set ft=scss.css
 au BufNewFile,BufRead Jenkinsfile setf groovy
 
 au Filetype gitcommit setl spell tw=72 colorcolumn=+1
