@@ -55,7 +55,7 @@ au BufNewFile,BufRead {Gemfile,Rakefile,config.ru} set ft=ruby
 au BufNewFile,BufRead Jenkinsfile setf groovy
 
 au Filetype gitcommit setl spell tw=72 colorcolumn=+1
-au Filetype groovy,html,javascript,json,ruby,scss.css,slim setl sw=2 ts=2 et
+au Filetype groovy,html,javascript,json,ruby,scss setl sw=2 ts=2 et
 au Filetype markdown setl spell wrap lbr nolist sw=2 ts=2 et
 
 " Highlighting
