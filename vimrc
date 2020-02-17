@@ -27,14 +27,14 @@ let maplocalleader = ','
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 
+" Showing numbers on the left side of the screen
+set relativenumber              " add relative numbering
+
 " Searching
 set incsearch                   " incremental searching
 set hlsearch                    " highlight matches
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
-
-" Showing numbers on the left side of the screen
-set relativenumber              " add relative numbering
 
 " turn off search highlight
 nnoremap <leader>/ :nohlsearch<CR>
