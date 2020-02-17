@@ -21,8 +21,8 @@ Plug 'jparise/vim-graphql', { 'tag': '*', 'for': 'graphql' }
 call plug#end()
 
 " Basic settings
-let mapleader      = ' '
-let maplocalleader = ' '
+let mapleader      = ','
+let maplocalleader = ','
 
 set encoding=utf-8
 set showcmd                     " display incomplete commands
