@@ -42,7 +42,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 " FZF settings
-nnoremap <silent> <Leader><Leader> :Files<CR>
+nnoremap <silent> <leader>f :Files<CR>
 
 " Set jj as esc
 imap jj <Esc>
