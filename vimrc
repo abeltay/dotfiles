@@ -36,6 +36,9 @@ set smartcase                   " ... unless they contain at least one capital l
 " Showing numbers on the left side of the screen
 set relativenumber              " add relative numbering
 
+" turn off search highlight
+nnoremap <leader>/ :nohlsearch<CR>
+
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
