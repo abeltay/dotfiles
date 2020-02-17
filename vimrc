@@ -9,7 +9,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 " Go
-Plug 'fatih/vim-go', { 'tag': '*', 'for': 'go' }
+Plug 'fatih/vim-go', { 'tag': '*', 'for': ['go', 'gomod'] }
 
 " React, ES6
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'jsx'] }
@@ -56,6 +56,7 @@ set nowrap                      " don't wrap lines
 set backspace=indent,eol,start  " backspace through everything in insert mode
 
 au BufNewFile,BufRead {Gemfile,Rakefile,config.ru} set ft=ruby
+au BufNewFile,BufRead {go.mod,go.sum} set ft=gomod
 au BufNewFile,BufRead Jenkinsfile setf groovy
 
 au Filetype gitcommit setl spell tw=72 colorcolumn=+1
