@@ -103,13 +103,15 @@ function git_current_branch() {
 	echo ${ref#refs/heads/}
 }
 
-#ALIASES
-##ls, the common ones I use a lot shortened for rapid fire usage
+# ALIASES
+# copied from https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/common-aliases/common-aliases.plugin.zsh
+# ls, the common ones I use a lot shortened for rapid fire usage
 ls --color=auto &> /dev/null && alias ls='ls --color=auto' || # credit to Victor Gavro, setting CLICOLOR environment variable for *BSD and Darwin systems - if it's set ls and possibly other utilities would work colored, but GNU ls (for Linux) ignores it. If "ls --color=auto" will not fail (exit status =0) - we have GNU version of ls and making alias to draw color codes in interactive mode, if it fails - then we don't need alias because of CLICOLOR variable. "&> /dev/null" just don't show stderr and stdout if something fail or if it's ok. Works for my linux and osx. (p.s. bash on osx and freebsd doesn't read .bashrc, so put it in .profile. already fixed it).
 alias l='ls -lFh'     #size,show type,human readable
 alias la='ls -lAFh'   #long list,show almost all,show type,human readable
 alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
 alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
+alias ll='ls -l'      #long list
 
 # Subset of git plugin aliases (sorted alphabetically) from oh-my-zsh (https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh)
 alias g='git'
