@@ -77,7 +77,7 @@ precmd() {
 	if [[ -n ${vcs_info_msg_0_} ]]; then
 		# vcs_info found something, that needs space. So a shorter $PWD
 		# makes sense.
-		PS1=" %B%2~%b${vcs_info_msg_0_} "
+		PS1=" %B%1~%b${vcs_info_msg_0_} "
 		RPS1=""
 	else
 		# Oh hey, nothing from vcs_info, so we got more space.
