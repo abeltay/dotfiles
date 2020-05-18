@@ -9,7 +9,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 " Go
-Plug 'fatih/vim-go', { 'tag': 'v1.22', 'for': ['go', 'gomod'] }
+Plug 'fatih/vim-go', { 'tag': 'v1.23', 'for': ['go', 'gomod'] }
 
 " React, ES6
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'jsx'] }
