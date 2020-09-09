@@ -143,7 +143,7 @@ alias gf='git fetch'
 alias gfa='git fetch --all --prune'
 
 alias gl='git pull'
-alias glg='git log --stat --color'
+alias glg='git log --stat'
 alias glgp='git log --stat -p'
 alias glgg='git log --graph'
 alias glgga='git log --graph --decorate --all'
