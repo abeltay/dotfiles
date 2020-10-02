@@ -3,7 +3,7 @@
 1. (Optional) Backup your existing `.tmux.conf`, `.vimrc` and `.zshrc` in your home directory
 1. Change your shell to zsh `chsh -s /bin/zsh`. (Optional) Reload your terminal
 1. Clone and `cd` to this repo. Run `./install.sh`
-1. `brew install fzf git tmux`
+1. `brew install fzf tmux`
 1. Set up [vim-plug](https://github.com/junegunn/vim-plug#installation)
 1. In `vim`
     - Run `:PlugInstall`
