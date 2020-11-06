@@ -15,3 +15,26 @@ The default vim installed does not have clipboard feature installed. If you have
 Alternatively, here are some options,
 - Select text with `shift-v` and `Enter` then, `:w !pbcopy`
 - Use vim's selection. For example, `:.w !pbcopy` or `:,+1w !pbcopy`
+
+## Git configurations
+In `.gitconfig`
+```
+[includeIf "gitdir:~/"]
+	path = .gitconfig-personal
+[includeIf "gitdir:~/work/"]
+	path = .gitconfig-work
+[core]
+	excludesfile = ~/.gitignore-global
+```
+
+In `.gitconfig-personal`
+```
+[user]
+	user = <name>
+	email = <email>
+```
+
+In `.gitignore-global`
+```
+*.swp
+```
