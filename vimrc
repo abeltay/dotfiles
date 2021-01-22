@@ -26,6 +26,7 @@ let maplocalleader = ','
 
 set encoding=utf-8
 set showcmd                     " display incomplete commands
+set re=0
 
 " Showing numbers on the left side of the screen
 set relativenumber              " add relative numbering
