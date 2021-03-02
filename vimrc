@@ -60,7 +60,7 @@ set nowrap                      " don't wrap lines
 set backspace=indent,eol,start  " backspace through everything in insert mode
 
 au BufNewFile,BufRead {Gemfile,Rakefile,config.ru} set ft=ruby
-au BufNewFile,BufRead {go.mod,go.sum} set ft=gomod
+au BufNewFile,BufRead {go.mod} set ft=gomod
 au BufNewFile,BufRead Jenkinsfile setf groovy
 
 au Filetype gitcommit setl spell tw=72 colorcolumn=+1
