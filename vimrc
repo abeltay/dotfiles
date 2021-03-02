@@ -37,8 +37,11 @@ set hlsearch                    " highlight matches
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-" turn off search highlight
+" Turn off search highlight
 nnoremap <leader>/ :nohlsearch<CR>
+
+" Set working directory to current file
+nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
