@@ -15,7 +15,7 @@ Plug 'fatih/vim-go', { 'tag': 'v1.24', 'for': ['go', 'gomod'] }
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'jsx'] }
 
 " GraphQL
-Plug 'jparise/vim-graphql', { 'tag': 'v1.3', 'for': 'graphql' }
+Plug 'jparise/vim-graphql', { 'tag': 'v1.4', 'for': 'graphql' }
 
 " Commands - PlugInstall, PlugUpdate, PlugClean[!], PlugUpgrade (Upgrade vim-plug)
 call plug#end()
