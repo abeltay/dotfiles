@@ -1,4 +1,4 @@
-set nocompatible              " be iMproved, required
+set nocompatible " be iMproved, required
 
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
@@ -25,17 +25,17 @@ let mapleader      = ','
 let maplocalleader = ','
 
 set encoding=utf-8
-set showcmd                     " display incomplete commands
+set showcmd        " display incomplete commands
 set re=0
 
 " Showing numbers on the left side of the screen
-set relativenumber              " add relative numbering
+set relativenumber " add relative numbering
 
 " Searching
-set incsearch                   " incremental searching
-set hlsearch                    " highlight matches
-set ignorecase                  " searches are case insensitive...
-set smartcase                   " ... unless they contain at least one capital letter
+set incsearch  " incremental searching
+set hlsearch   " highlight matches
+set ignorecase " searches are case insensitive...
+set smartcase  " ... unless they contain at least one capital letter
 
 " Turn off search highlight
 nnoremap <leader>/ :nohlsearch<CR>
@@ -56,8 +56,8 @@ nnoremap <silent> <leader>f :Files<CR>
 imap jj <Esc>
 
 " Whitespace
-set nowrap                      " don't wrap lines
-set backspace=indent,eol,start  " backspace through everything in insert mode
+set nowrap                     " don't wrap lines
+set backspace=indent,eol,start " backspace through everything in insert mode
 
 au BufNewFile,BufRead {Gemfile,Rakefile,config.ru} set ft=ruby
 au BufNewFile,BufRead {go.mod} set ft=gomod
