@@ -3,6 +3,7 @@ set nocompatible " be iMproved, required
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround', { 'tag': 'v2.2' }
 Plug 'tpope/vim-vinegar'
+Plug 'fatih/vim-go', { 'tag': 'v1.28', 'for': 'go' }
 
 " Commands - PlugInstall, PlugUpdate, PlugClean[!], PlugUpgrade (Upgrade vim-plug)
 call plug#end()
@@ -44,6 +45,13 @@ imap jj <Esc>
 set nowrap                     " don't wrap lines
 set backspace=indent,eol,start " backspace through everything in insert mode
 
+" vim-go settings
+let g:go_fmt_command = "goimports"
+autocmd BufNewFile,BufRead {go.mod,go.sum} set ft=go
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>r  <Plug>(go-run)
+
+" File settings
 autocmd BufNewFile,BufRead {Gemfile,Rakefile,config.ru} set ft=ruby
 autocmd BufNewFile,BufRead Jenkinsfile setf groovy
 
