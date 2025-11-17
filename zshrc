@@ -7,6 +7,10 @@ export -U PATH=/usr/local/bin:$PATH:$HOME/go/bin:$HOME/.cargo/bin
 # enable colored output from ls, etc. on FreeBSD-based systems
 export CLICOLOR=1
 
+# certificates
+export AWS_CA_BUNDLE="${HOME}/.config/cloudflare/combined-bundle.pem"
+export NODE_EXTRA_CA_CERTS="${HOME}/.config/cloudflare/Cloudflare_CA.pem"
+
 # Editor
 export VISUAL=vim
 export EDITOR=$VISUAL
