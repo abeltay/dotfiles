@@ -152,7 +152,7 @@ alias gbr='git branch --remote'
 
 alias gc='git commit -v'
 alias gc!='git commit -v --amend'
-alias gcr!='git commit -v --amend --reset-author'
+alias gcr='git commit -v --amend --reset-author'
 alias gcb='git checkout -b'
 alias gclean='git clean -id'
 alias gcm='git checkout main'
