@@ -2,7 +2,7 @@
 autoload -U colors && colors
 
 # ensure dotfiles bin directory is loaded first
-export -U PATH=/usr/local/bin:$PATH:$HOME/go/bin:$HOME/.cargo/bin
+export -U PATH=/usr/local/bin:$HOME/.local/bin:$HOME/go/bin:$PATH
 
 # enable colored output from ls, etc. on FreeBSD-based systems
 export CLICOLOR=1
